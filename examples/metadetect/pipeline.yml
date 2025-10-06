@@ -76,7 +76,7 @@ stages:
   - name: TXTwoPointPlots        # Make plots of 2pt correlations
   - name: TXDiagnosticQuantiles
   - name: TXSourceDiagnosticPlots      # Make a suite of diagnostic plots
-    nprocess: 2
+    nprocess: 1   # changed from 2 -> 1 to force no mpi as this is throwing an error
   - name: TXLensDiagnosticPlots      # Make a suite of diagnostic plots
   - name: TXGammaTFieldCenters   # Compute and plot gamma_t around center points
     threads_per_process: 2
@@ -142,7 +142,7 @@ modules: >
 # where to find any modules that are not in this repo,
 # and any other code we need.
 python_paths:
-  - submodules/WLMassMap/python/desc/
+  # - submodules/WLMassMap/python/desc/  # commenting this out so it  can find WLMassMap in my environemnt
   - submodules/pyfsb
 
 # Where to put outputs
