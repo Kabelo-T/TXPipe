@@ -25,7 +25,7 @@ class TXConvergenceMaps(PipelineStage):
     }
 
     def run(self):
-        from wlmassmap.kaiser_squires import healpix_KS_map
+        from desc.wlmassmap.kaiser_squires import healpix_KS_map
         import healpy
 
         # Open the input file and read bit of metadata.
