@@ -109,7 +109,7 @@ PZEstimatorLens:
     zp_errors: [0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
     mag_err_min: 0.005
     madau_reddening: false
-    mag_limits:
+    mag_limits:/
         mag_u: 27.79
         mag_g: 29.04
         mag_r: 29.06
