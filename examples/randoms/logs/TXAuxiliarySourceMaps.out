@@ -1,0 +1,12 @@
+/global/cfs/projectdirs/lsst/groups/CL/cl_pipeline_project/conda_envs/txpipe_clp/lib/python3.10/site-packages/dask/core.py:127: RuntimeWarning: invalid value encountered in divide
+  return func(*(_execute_task(a, cache) for a in args))
+Executing stage: TXAuxiliarySourceMaps @ 2026-02-06 13:31:26.222057
+Map shows total 0 objects with flag 1
+Map shows total 0 objects with flag 2
+Map shows total 0 objects with flag 4
+Map shows total 0 objects with flag 8
+Map shows total 0 objects with flag 16
+Map shows total 0 objects with flag 32
+Map shows total 0 objects with flag 64
+Map shows total 0 objects with flag 128
+Stage complete: TXAuxiliarySourceMaps @ 2026-02-06 13:31:27.424742 took 0.02 minutes

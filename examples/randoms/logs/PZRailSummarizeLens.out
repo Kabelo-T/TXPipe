@@ -1,0 +1,20 @@
+Executing stage: PZRailSummarize @ 2026-02-06 13:31:40.269567
+Running ensemble estimation for bin:  bin_0
+Inserting handle into data store.  model: data/example/outputs_randoms/lens_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms/binned_lens_catalog.hdf5, NZDirSummarizer
+Process 0 running estimator on chunk 0 - 156
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_lens_photoz_stack_bin_0.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_lens_photoz_realizations_bin_0.hdf5, NZDirSummarizer
+Running ensemble estimation for bin:  bin_1
+Inserting handle into data store.  model: data/example/outputs_randoms/lens_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms/binned_lens_catalog.hdf5, NZDirSummarizer
+Process 0 running estimator on chunk 0 - 508
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_lens_photoz_stack_bin_1.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_lens_photoz_realizations_bin_1.hdf5, NZDirSummarizer
+Running ensemble estimation for bin:  bin_all
+Inserting handle into data store.  model: data/example/outputs_randoms/lens_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms/binned_lens_catalog.hdf5, NZDirSummarizer
+Process 0 running estimator on chunk 0 - 664
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_lens_photoz_stack_bin_all.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_lens_photoz_realizations_bin_all.hdf5, NZDirSummarizer
+Stage complete: PZRailSummarize @ 2026-02-06 13:31:41.376686 took 0.02 minutes

@@ -1,0 +1,5 @@
+Executing stage: GridSelection @ 2026-02-06 13:29:45.152076
+Inserting handle into data store.  input: data/example/outputs_randoms/ideal_specz_catalog.pq, GridSelection
+column_list None
+Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_specz_catalog_pq.pq, GridSelection
+Stage complete: GridSelection @ 2026-02-06 13:29:52.190574 took 0.12 minutes

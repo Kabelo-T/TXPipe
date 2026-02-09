@@ -1,0 +1,8 @@
+Executing stage: TXRandomCat @ 2026-02-06 13:31:50.241026
+Generating 62021 randoms
+  - 31125 in bin 0
+  - 30896 in bin 1
+Rank 0 done 0 of its 5 pixels for bin 0
+Rank 0 done 0 of its 5 pixels for bin 1
+Sub-sampling randoms at rate 0.5
+Stage complete: TXRandomCat @ 2026-02-06 13:31:51.222843 took 0.02 minutes

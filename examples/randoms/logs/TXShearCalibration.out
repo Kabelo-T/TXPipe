@@ -1,0 +1,31 @@
+Executing stage: TXShearCalibration @ 2026-02-06 13:31:07.241140
+Copying extra columns:  []
+Copying magnitude:  ['mag_i', 'mag_r', 'mag_z', 'mag_err_i', 'mag_err_r', 'mag_err_z']
+Using calibration method: MetaDetectCalibrator
+Reading these columns from the 'shear' group:
+ - 00/g1
+ - 00/g2
+ - 00/ra
+ - 00/dec
+ - 00/weight
+ - 00/mag_i
+ - 00/mag_r
+ - 00/mag_z
+ - 00/mag_err_i
+ - 00/mag_err_r
+ - 00/mag_err_z
+Renaming these columns:
+ - 00/g1 -> g1
+ - 00/g2 -> g2
+ - 00/ra -> ra
+ - 00/dec -> dec
+ - 00/weight -> weight
+ - 00/mag_i -> mag_i
+ - 00/mag_r -> mag_r
+ - 00/mag_z -> mag_z
+ - 00/mag_err_i -> mag_err_i
+ - 00/mag_err_r -> mag_err_r
+ - 00/mag_err_z -> mag_err_z
+Process 0 collating bins: [0, 1, 2, 3, all]
+Rank 0 processing data 0 - 82,200
+Stage complete: TXShearCalibration @ 2026-02-06 13:31:07.320351 took 0.00 minutes

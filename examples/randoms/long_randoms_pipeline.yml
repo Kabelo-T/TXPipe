@@ -1,0 +1,123 @@
+# This pipeline allows you to generate randoms starting from the example data that can be downloaded with TXPipe.
+# Stages to run
+stages:
+  - name: FlowCreator               # Simulate a 'spectroscopic' population using RAIL, which is just a true PZ catalog
+    aliases:
+        output: ideal_specz_catalog
+        model: flow
+  - name: GridSelection            # Sample the spectroscopic population using RAIL
+    aliases:
+        input: ideal_specz_catalog
+        output: specz_catalog_pq
+  - name: TXParqetToHDF            # Convert the spec sample format
+    aliases:
+        input: specz_catalog_pq
+        output: spectroscopic_catalog
+  - name: PZPrepareEstimatorLens     # Prepare the p(z) estimator
+    classname: BPZliteInformer
+    aliases:
+        input: spectroscopic_catalog
+        model: lens_photoz_model
+  - name: PZEstimatorLens          # Measure lens galaxy PDFs
+    classname: BPZliteEstimator
+    threads_per_process: 1
+    aliases:
+        model: lens_photoz_model
+        input: photometry_catalog
+        output: lens_photoz_pdfs
+  - name: TXMeanLensSelector       # select objects for lens bins from the PDFs
+  - name: NZDirInformerLens         # Prepare the DIR method inputs for the lens sample     
+    classname: NZDirInformer
+    aliases:
+        input: spectroscopic_catalog
+        model: lens_direct_calibration_model
+  - name: PZRailSummarizeLens      # Run the DIR method on the lens sample to find n(z)
+    classname: PZRailSummarize
+    aliases:
+        tomography_catalog: lens_tomography_catalog
+        binned_catalog: binned_lens_catalog
+        model: lens_direct_calibration_model
+        photoz_stack: lens_photoz_stack
+        photoz_realizations: lens_photoz_realizations
+  - name: PZRailSummarizeSource    # Run the DIR method on the source sample to find n(z)
+    classname: PZRailSummarize
+    aliases:
+        tomography_catalog: shear_tomography_catalog
+        binned_catalog: binned_shear_catalog
+        model: source_direct_calibration_model
+        photoz_stack: shear_photoz_stack
+        photoz_realizations: source_photoz_realizations
+  - name: TXSourceSelectorMetadetect    # select and split objects into source bins
+  - name: NZDirInformerSource       # Prepare the DIR method inputs for the source sample
+    classname: NZDirInformer
+    aliases:
+        input: spectroscopic_catalog
+        model: source_direct_calibration_model
+  - name: TXShearCalibration       # Calibrate and split the source sample tomographically
+  - name: TXLensCatalogSplitter    # Split the lens sample tomographically
+  - name: TXStarCatalogSplitter    # Split the star catalog into separate bins (psf/non-psf)
+  - name: TXLSSWeightsUnit         # add systematic weights to the lens sample (weight=1 for this example)
+  - name: TXSourceMaps             # make source g1 and g2 maps
+  - name: TXLensMaps               # make source lens and n_gal maps
+  - name: TXAuxiliarySourceMaps    # make PSF and flag maps
+  - name: TXAuxiliaryLensMaps      # make depth and bright object maps
+  - name: TXSimpleMaskFrac       # combine maps to make a simple mask
+  - name: TXSourceNoiseMaps      # Compute shear noise using rotations
+  - name: TXLensNoiseMaps        # Compute lens noise using half-splits
+  - name: TXDensityMaps          # turn mask and ngal maps into overdensity maps
+  - name: TXMapPlots             # make pictures of all the maps
+  - name: TXTracerMetadata       # collate metadata
+  - name: TXRandomCat            # generate lens bin random catalogs
+
+
+# modules and packages to import that have pipeline
+# stages defined in them
+modules: >
+    txpipe
+    txpipe.extensions.hos.fsb
+    rail.creation.degraders.grid_selection
+    rail.creation.engines.flowEngine
+    rail.estimation.algos.nz_dir
+    rail.estimation.algos.bpz_lite
+
+# where to find any modules that are not in this repo,
+# and any other code we need.
+python_paths:
+  - submodules/pyfsb
+
+# Where to put outputs
+output_dir: data/example/outputs_randoms
+
+# How to run the pipeline: mini, parsl, or cwl
+launcher:
+    name: mini
+    interval: 1.0
+
+# Where to run the pipeline: cori-interactive, cori-batch, or local
+site:
+    name: local
+    max_threads: 2
+
+# configuration settings
+config: examples/randoms/config_randomsonly.yml
+
+inputs:
+    # See README for paths to download these files
+    shear_catalog: data/example/inputs/metadetect_shear_catalog.hdf5
+    photometry_catalog: data/example/inputs/photometry_catalog.hdf5
+    exposures: data/example/inputs/exposures.hdf5
+    star_catalog: data/example/inputs/star_catalog.hdf5
+    # This file comes with the code
+    fiducial_cosmology: data/fiducial_cosmology.yml
+    # For the self-calibration extension we are not using Random_cat_source for now
+    # So it is set to Null, so the yaml intepreter returns a None value to python.
+    random_cats_source:
+    flow: data/example/inputs/example_flow.pkl
+
+# if supported by the launcher, restart the pipeline where it left off
+# if interrupted
+resume: true
+# where to put output logs for individual stages
+log_dir: examples/randoms/logs
+# where to put an overall parsl pipeline log
+pipeline_log: examples/randoms/log.txt
