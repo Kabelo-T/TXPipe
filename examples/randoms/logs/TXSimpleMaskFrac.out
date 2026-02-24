@@ -1,6 +1,6 @@
-Executing stage: TXSimpleMaskFrac @ 2026-02-06 13:29:41.099591
+Executing stage: TXSimpleMaskFrac @ 2026-02-19 12:36:42.714893
 Mask 'depth' removes fraction 0.000 of hit pixels
 Mask 'bright_obj' removes fraction 0.000 of hit pixels
-f_sky = 0.00010172526041523464
-area = 4.20 sq deg
-Stage complete: TXSimpleMaskFrac @ 2026-02-06 13:29:43.444265 took 0.04 minutes
+f_sky = 5.086263020761732e-05
+area = 2.10 sq deg
+Stage complete: TXSimpleMaskFrac @ 2026-02-19 12:36:44.350830 took 0.03 minutes

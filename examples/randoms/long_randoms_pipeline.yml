@@ -86,7 +86,7 @@ python_paths:
   - submodules/pyfsb
 
 # Where to put outputs
-output_dir: data/example/outputs_randoms
+output_dir: data/example/outputs_randoms_nside128
 
 # How to run the pipeline: mini, parsl, or cwl
 launcher:

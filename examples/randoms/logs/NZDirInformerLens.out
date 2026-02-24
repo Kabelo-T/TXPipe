@@ -1,4 +1,4 @@
-Executing stage: NZDirInformer @ 2026-02-06 13:29:58.162788
-Inserting handle into data store.  input: data/example/outputs_randoms/spectroscopic_catalog.hdf5, NZDirInformerLens
-Inserting handle into data store.  model: data/example/outputs_randoms/inprogress_lens_direct_calibration_model.pkl, NZDirInformerLens
-Stage complete: NZDirInformer @ 2026-02-06 13:30:03.113471 took 0.08 minutes
+Executing stage: NZDirInformer @ 2026-02-19 12:36:55.764566
+Inserting handle into data store.  input: data/example/outputs_randoms_nside128/spectroscopic_catalog.hdf5, NZDirInformerLens
+Inserting handle into data store.  model: data/example/outputs_randoms_nside128/inprogress_lens_direct_calibration_model.pkl, NZDirInformerLens
+Stage complete: NZDirInformer @ 2026-02-19 12:36:58.879567 took 0.05 minutes

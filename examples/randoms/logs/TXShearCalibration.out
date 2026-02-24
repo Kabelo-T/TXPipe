@@ -1,4 +1,4 @@
-Executing stage: TXShearCalibration @ 2026-02-06 13:31:07.241140
+Executing stage: TXShearCalibration @ 2026-02-19 12:37:52.749071
 Copying extra columns:  []
 Copying magnitude:  ['mag_i', 'mag_r', 'mag_z', 'mag_err_i', 'mag_err_r', 'mag_err_z']
 Using calibration method: MetaDetectCalibrator
@@ -28,4 +28,4 @@ Renaming these columns:
  - 00/mag_err_z -> mag_err_z
 Process 0 collating bins: [0, 1, 2, 3, all]
 Rank 0 processing data 0 - 82,200
-Stage complete: TXShearCalibration @ 2026-02-06 13:31:07.320351 took 0.00 minutes
+Stage complete: TXShearCalibration @ 2026-02-19 12:37:52.928813 took 0.00 minutes

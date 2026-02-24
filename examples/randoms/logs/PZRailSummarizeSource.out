@@ -1,32 +1,32 @@
-Executing stage: PZRailSummarize @ 2026-02-06 13:31:16.195151
+Executing stage: PZRailSummarize @ 2026-02-19 12:38:00.882145
 Running ensemble estimation for bin:  bin_0
-Inserting handle into data store.  model: data/example/outputs_randoms/source_direct_calibration_model.pkl, NZDirSummarizer
-Inserting handle into data store.  input: data/example/outputs_randoms/binned_shear_catalog.hdf5, NZDirSummarizer
+Inserting handle into data store.  model: data/example/outputs_randoms_nside128/source_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms_nside128/binned_shear_catalog.hdf5, NZDirSummarizer
 Process 0 running estimator on chunk 0 - 2164
-Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_shear_photoz_stack_bin_0.hdf5, NZDirSummarizer
-Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_source_photoz_realizations_bin_0.hdf5, NZDirSummarizer
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms_nside128/inprogress_shear_photoz_stack_bin_0.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms_nside128/inprogress_source_photoz_realizations_bin_0.hdf5, NZDirSummarizer
 Running ensemble estimation for bin:  bin_1
-Inserting handle into data store.  model: data/example/outputs_randoms/source_direct_calibration_model.pkl, NZDirSummarizer
-Inserting handle into data store.  input: data/example/outputs_randoms/binned_shear_catalog.hdf5, NZDirSummarizer
+Inserting handle into data store.  model: data/example/outputs_randoms_nside128/source_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms_nside128/binned_shear_catalog.hdf5, NZDirSummarizer
 Process 0 running estimator on chunk 0 - 2205
-Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_shear_photoz_stack_bin_1.hdf5, NZDirSummarizer
-Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_source_photoz_realizations_bin_1.hdf5, NZDirSummarizer
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms_nside128/inprogress_shear_photoz_stack_bin_1.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms_nside128/inprogress_source_photoz_realizations_bin_1.hdf5, NZDirSummarizer
 Running ensemble estimation for bin:  bin_2
-Inserting handle into data store.  model: data/example/outputs_randoms/source_direct_calibration_model.pkl, NZDirSummarizer
-Inserting handle into data store.  input: data/example/outputs_randoms/binned_shear_catalog.hdf5, NZDirSummarizer
+Inserting handle into data store.  model: data/example/outputs_randoms_nside128/source_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms_nside128/binned_shear_catalog.hdf5, NZDirSummarizer
 Process 0 running estimator on chunk 0 - 1847
-Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_shear_photoz_stack_bin_2.hdf5, NZDirSummarizer
-Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_source_photoz_realizations_bin_2.hdf5, NZDirSummarizer
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms_nside128/inprogress_shear_photoz_stack_bin_2.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms_nside128/inprogress_source_photoz_realizations_bin_2.hdf5, NZDirSummarizer
 Running ensemble estimation for bin:  bin_3
-Inserting handle into data store.  model: data/example/outputs_randoms/source_direct_calibration_model.pkl, NZDirSummarizer
-Inserting handle into data store.  input: data/example/outputs_randoms/binned_shear_catalog.hdf5, NZDirSummarizer
+Inserting handle into data store.  model: data/example/outputs_randoms_nside128/source_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms_nside128/binned_shear_catalog.hdf5, NZDirSummarizer
 Process 0 running estimator on chunk 0 - 2883
-Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_shear_photoz_stack_bin_3.hdf5, NZDirSummarizer
-Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_source_photoz_realizations_bin_3.hdf5, NZDirSummarizer
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms_nside128/inprogress_shear_photoz_stack_bin_3.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms_nside128/inprogress_source_photoz_realizations_bin_3.hdf5, NZDirSummarizer
 Running ensemble estimation for bin:  bin_all
-Inserting handle into data store.  model: data/example/outputs_randoms/source_direct_calibration_model.pkl, NZDirSummarizer
-Inserting handle into data store.  input: data/example/outputs_randoms/binned_shear_catalog.hdf5, NZDirSummarizer
+Inserting handle into data store.  model: data/example/outputs_randoms_nside128/source_direct_calibration_model.pkl, NZDirSummarizer
+Inserting handle into data store.  input: data/example/outputs_randoms_nside128/binned_shear_catalog.hdf5, NZDirSummarizer
 Process 0 running estimator on chunk 0 - 9099
-Inserting handle into data store.  single_NZ: data/example/outputs_randoms/inprogress_shear_photoz_stack_bin_all.hdf5, NZDirSummarizer
-Inserting handle into data store.  output: data/example/outputs_randoms/inprogress_source_photoz_realizations_bin_all.hdf5, NZDirSummarizer
-Stage complete: PZRailSummarize @ 2026-02-06 13:31:18.260295 took 0.03 minutes
+Inserting handle into data store.  single_NZ: data/example/outputs_randoms_nside128/inprogress_shear_photoz_stack_bin_all.hdf5, NZDirSummarizer
+Inserting handle into data store.  output: data/example/outputs_randoms_nside128/inprogress_source_photoz_realizations_bin_all.hdf5, NZDirSummarizer
+Stage complete: PZRailSummarize @ 2026-02-19 12:38:02.880831 took 0.03 minutes

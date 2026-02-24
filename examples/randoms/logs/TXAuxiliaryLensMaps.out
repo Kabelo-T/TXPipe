@@ -1,4 +1,4 @@
 /global/cfs/projectdirs/lsst/groups/CL/cl_pipeline_project/conda_envs/txpipe_clp/lib/python3.10/site-packages/dask/core.py:127: RuntimeWarning: invalid value encountered in divide
   return func(*(_execute_task(a, cache) for a in args))
-Executing stage: TXAuxiliaryLensMaps @ 2026-02-06 13:27:53.905039
-Stage complete: TXAuxiliaryLensMaps @ 2026-02-06 13:28:11.696080 took 0.30 minutes
+Executing stage: TXAuxiliaryLensMaps @ 2026-02-19 12:35:18.549328
+Stage complete: TXAuxiliaryLensMaps @ 2026-02-19 12:35:26.942549 took 0.14 minutes

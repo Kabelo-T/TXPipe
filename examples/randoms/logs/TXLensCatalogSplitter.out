@@ -1,5 +1,5 @@
-Executing stage: TXLensCatalogSplitter @ 2026-02-06 13:31:23.249248
+Executing stage: TXLensCatalogSplitter @ 2026-02-19 12:38:07.856694
 Copying photometry bands zgryiu to sub-catalogs
 Process 0 collating bins: [0, 1, all]
 Process 0 binning data in range 0 - 82,200
-Stage complete: TXLensCatalogSplitter @ 2026-02-06 13:31:24.829421 took 0.03 minutes
+Stage complete: TXLensCatalogSplitter @ 2026-02-19 12:38:09.095138 took 0.02 minutes

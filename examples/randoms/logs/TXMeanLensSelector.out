@@ -1,4 +1,4 @@
-Executing stage: TXMeanLensSelector @ 2026-02-06 13:31:12.185408
+Executing stage: TXMeanLensSelector @ 2026-02-19 12:37:57.784804
 Process 0 running selection for rows 0-82,200
 Rank 0 found 3396 / 82200 galaxies within the selection redshift range, in any bin. 82200 galaxies had finite z. Mean z of these was 1.205393278200995
 Rank 0 selected 2062 objects out of 82200 as potential lenses with method boss
@@ -6,4 +6,4 @@ Final bin counts:
 Bin 0: 156.0
 Bin 1: 508.0
 Total:  664.0
-Stage complete: TXMeanLensSelector @ 2026-02-06 13:31:13.770811 took 0.03 minutes
+Stage complete: TXMeanLensSelector @ 2026-02-19 12:37:59.113250 took 0.02 minutes
