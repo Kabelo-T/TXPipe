@@ -4,13 +4,13 @@ TXTwoPointCluster:
   min_sep: 10.0
   nbins: 15
   redshift_bin_edges:
-  - 0.4
-  - 0.8
-  - 1.2
+  - 0.2
+  - 0.6
+  - 1.0
   richness_bin_edges:
   - 20
   - 30
-  - 200
+  - 300
   units: arcmin
 global:
   chunk_rows: 100000

@@ -1,0 +1,8 @@
+Executing stage: TXTwoPointCluster @ 2026-03-24 09:36:24.660347
+0 zbin_0_richbin_0 zbin_0_richbin_0
+1 zbin_0_richbin_0 zbin_0_richbin_1
+2 zbin_0_richbin_1 zbin_0_richbin_1
+3 zbin_1_richbin_0 zbin_1_richbin_0
+4 zbin_1_richbin_0 zbin_1_richbin_1
+5 zbin_1_richbin_1 zbin_1_richbin_1
+Stage complete: TXTwoPointCluster @ 2026-03-24 09:36:29.556176 took 0.08 minutes
